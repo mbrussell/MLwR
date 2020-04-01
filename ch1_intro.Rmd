@@ -1,0 +1,17 @@
+---
+title: "Chapter 1 - Intro to ML"
+author: "Matt Russell"
+date: "4/1/2020"
+output: html_document
+---
+
+RWeka is an [R interface to Weka](https://cran.r-project.org/web/packages/RWeka/index.html) (Version 3.9.3). Weka is a collection of machine learning algorithms for data mining tasks written in Java, containing tools for data pre-processing, classification, regression, clustering, association rules, and visualization. Package 'RWeka' contains the interface code, the Weka jar is in a separate package 'RWekajars'. For more information on Weka see <http://www.cs.waikato.ac.nz/ml/weka/>.
+
+[This page](https://www.r-statistics.com/2012/08/how-to-load-the-rjava-package-after-the-error-java_home-cannot-be-determined-from-the-registry/) allowed me to troubleshoot downloading the RWeka package (required the 64-bit version of Java).
+
+```{r}
+#install.packages("RWeka")
+#install.packages("rJava")
+library(RWeka)
+```
+
